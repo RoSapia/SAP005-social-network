@@ -1,15 +1,32 @@
 // exporte suas funções
 
 export const firebaseActions = {
-  loginUserFirebase(email, password) {
-    firebase.auth().signInWithEmailAndPassword(email, password)
+  createUser(email, password, callback) {
+      // seu código aqui
+
+      firebase.auth().createUserWithEmailAndPassword(email, password)
+          .then((user) => {
+            console.log('Deu certo!');
+            callback(user);
+          })
+          .catch((error) => {
+              var errorCode = error.code;
+              var errorMessage = error.message;
+              callback(user);
+          });
+
+  },
+  loginUser(email, password, callback) {
+      // seu código aqui
+      console.log('chega aqui')
+      firebase.auth().signInWithEmailAndPassword(email, password)
         .then((user) => {
-            return true
+          console.log('logou');
+          callback()
         })
         .catch((error) => {
-            var errorCode = error.code;
-            var errorMessage = error.message
-            return false
+          console.log('não logou');
+          console.log(error);
         });
   }
 }
