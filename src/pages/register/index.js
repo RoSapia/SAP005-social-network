@@ -1,3 +1,5 @@
+import { loginActions } from "./registerFuncs.js"
+
 export const Register = () => {
 
   const rootElement = document.createElement('form');
@@ -16,5 +18,10 @@ export const Register = () => {
         <button id="register-button" type="submit">Registrar-se</button>
         </div>
   `;
+
+
+  // Cria login utilizando e-mail e senha
+  loginActions.createUser(rootElement)
+
   return rootElement;
 };

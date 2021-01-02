@@ -3,6 +3,8 @@ import { Home } from './pages/home/index.js';
 import { Login } from './pages/login/index.js';
 import { onNavigate } from './utils/history.js';
 import { Register } from './pages/register/index.js';
+import { Posts } from './pages/posts/index.js';
+import { Publish } from './pages/publish/index.js';
 
 const routeRender = () => {
     const rootDiv = document.getElementById('root');
@@ -11,6 +13,8 @@ const routeRender = () => {
         '/login': Login,
         '/register': Register,
         '/cadastro': Register,
+        '/posts': Posts,
+        '/publish': Publish
 
     };
 
@@ -37,6 +41,6 @@ window.addEventListener('load', () => {
         .addEventListener('click', (e) => {
             e.preventDefault();
             onNavigate('/register')
-        });    
+        });
     routeRender();
 });
