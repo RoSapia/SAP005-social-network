@@ -1,157 +1,33 @@
-# Criando uma Rede Social
+#  Rede Social
 
-## Índice
+## Mulheres Musicistas 
 
-- [1. Prefácio](#1-prefácio)
-- [2. Resumo do projeto](#2-resumo-do-projeto)
-- [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-- [4. Considerações gerais](#4-considerações-gerais)
-- [5. Critérios de aceitação mínimos do
-  projeto](#5-critérios-de-aceitação-mínimos-do-projeto)
+- [1. Resumo do projeto](#2-resumo-do-projeto)
+- [3. Pesquisa de Usuarios ](#3-pesquisa-de-usuario )
+- [4. Definição de Usuário](#4-definição-de-usuário)
+- [5. Critérios de aceitação mínimos doprojeto](#5-critérios-de-aceitação-mínimos-do-projeto)
 - [6. Hacker edition](#6-hacker-edition)
 - [7. Entrega](#7-entrega)
-- [8. Guias, dicas e leituras
-  complementares](#8-guias-dicas-e-leituras-complementares)
+- [8. Guias, dicas e leiturascomplementares](#8-guias-dicas-e-leituras-complementares)
 
----
 
-## 1. Prefácio
+## 1. Resumo do projeto
 
-Instagram, Snapchat, Twitter, Facebook, Twitch, Linkedin, etc. As redes sociais
-invadiram nossas vidas. Nós as amamos ou odiamos, e muitas pessoas não conseguem
-viver sem elas.
+Esse projeto trata-se de uma Rede Social voltada somente para Mulheres Musicistas 
+onde elas teram acesso a contato de outras Musicistas troca de informações como partituras, teorias, tecnias e procurar grupos para ingressar em uma Banda etc.
 
-Há redes sociais de todo tipo para todos os tipos de interesse. Por exemplo: em
-uma rodada de financiamento com investidores, foi apresentada uma rede social
-para químicos onde os usuários podem publicar artigos a respeito de suas
-pesquisas, comentar os artigos de seus colegas e filtrar artigos de acordo com
-determinadas tags ou popularidade, mais recente ou mais comentado.
+## 3. Pesquisa de Usuarios 
 
-## 2. Resumo do projeto
+Trabalhamos com um formulario de pesquisa , e apartir das infromações foram elaboradas o perfil de usúrios e detalhes que seram utilizados da plataforma.
 
-Neste projeto você construirá uma Rede Social sobre o que você e sua equipe
-decidirem. Pode ser, por exemplo, sobre alimentação saudável, feminismo,
-educação, saúde, energias renováveis, amantes das
-[Empanadas](https://pt.wikipedia.org/wiki/Empanada), de
-[Tacos](<https://pt.wikipedia.org/wiki/Taco_(culin%C3%A1ria)>), de
-[Feijoada](https://pt.wikipedia.org/wiki/Feijoada), ou do que seja.
+![Pesquisa de usuario](imagem-pesquisa-RD-png)
 
-Sua Rede Social terá que permitir à qualquer usuário criar uma conta de acesso,
-logar-se com ela, criar, editar, deletar e dar _likes_ em publicações.
 
-## 3. Objetivos de aprendizagem
+## 4. Definição de Usuário 
 
-O objetivo principal de aprendizagem deste projeto é construir uma [Single-page
-Application
-(SPA)](https://pt.wikipedia.org/wiki/Aplicativo_de_p%C3%A1gina_%C3%BAnica)
-[_responsiva_](https://github.com/Laboratoria/curricula-js/tree/master/topics/css/02-responsive)
-(com mais de uma tela/ página) na qual seja possível **ler e escrever dados.**
-
-### HTML e CSS
-
-- [ ] [HTML
-      semântico](https://developer.mozilla.org/pt-BR/docs/Glossario/Semantica)
-- [ ] [CSS `flexbox`](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [ ] Construir sua aplicação respeitando o protótipo.
-
-### DOM e Web APIs
-
-- [ ] [Manipulação do
-      DOM](https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM/Introdu%C3%A7%C3%A3o)
-- [ ] [History
-      API](https://developer.mozilla.org/pt-BR/docs/Web/API/History_API)
-
-### Javascript
-
-- [ ] [Uso de
-      callbacks](https://developer.mozilla.org/pt-BR/docs/Glossario/Callback_function)
-- [ ] [Consumo de
-      Promises](https://scotch.io/tutorials/javascript-promises-for-dummies#toc-consuming-promises)
-- [ ] Uso de ES modules
-      ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
-      |
-      [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
-
-### Firebase
-
-- [ ] [Firestore](https://firebase.google.com/docs/firestore)
-- [ ] [Firebase Auth](https://firebase.google.com/docs/auth/web/start)
-- [ ] [Firebase security rules](https://firebase.google.com/docs/rules)
-
-### Testing
-
-- [ ] [Teste unitários](https://jestjs.io/docs/pt-BR/getting-started)
-- [ ] [Testes assíncronos](https://jestjs.io/docs/pt-BR/asynchronous)
-- [ ] [Mocking](https://jestjs.io/docs/pt-BR/manual-mocks)
-
-### Git e Github
-
-- [ ] [Colaboração pelo Github](https://docs.github.com/pt/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository)
-- [ ] Organização pelo [Github Projects](https://docs.github.com/pt/free-pro-team@latest/github/managing-your-work-on-github/about-project-boards)
-
-### Boas práticas de programação
-
-- [ ] Modularização
-- [ ] Nomenclatura / Semântica
-- [ ] Linting
-
----
-
-## 4. Considerações gerais
-
-- Este projeto deve ser desenvolvido em trios.
-
-- A lógica do projeto deve estar implementada completamente em JavaScript
-  (ES6+), HTML e CSS :smiley:. Para este projeto **não está permitido** o uso de
-  _frameworks_ ou bibliotecas de CSS e JS.
-
-- A divisão e organização do trabalho deve permitir, sem exceção, que **cada
-  integrante** da equipe pratique a aprendizagem de tudo que está envolvido em
-  **cada história**. _Não dividam o trabalho como em uma fábrica._
-
-- Está avançando em seus projetos com alguma fluidez e sem grandes problemas?
-  Seja generosa com suas parceiras, deixe-as aprender e praticar sem restrições,
-  mesmo que demore um pouco mais. Aproveite para _mentorá-las_, para fazer _pair
-  programming_. Uma das melhores formas de aprender é explicar verbalmente.
-
-- Está sentindo dificuldade e para você é mais difícil de avançar? Não fique com
-  as partes "fáceis" do projeto. Converse, negocie, busque sua oportunidade de
-  praticar e aprender o que é mais difícil para você.
-
-- Vocês apenas poderão trabalhar em uma história por vez. Não avancem para a
-  próxima sem completar a anterior. As histórias apenas são concluídas quando se
-  completam **todos** os critérios de aceitação + **toda** sua definição de
-  pronto.
 
 ## 5. Critérios de aceitação mínimos do projeto
 
-### 5.1 Boilerplate
-
-O _boilerplate_ contém uma estrutura de arquivos como ponto de partida, assim
-como toda a configuração de dependências:
-
-```text
-.
-├── src
-|  ├── pages (páginas)
-|  |  └── home
-|  |  |  ├── index.js
-|  |  |  └── index.spec.js
-|  |  └── login
-|  |     ├── index.js
-|  |     └── index.spec.js
-|  ├── services (serviços externos)
-|  |  ├── index.js
-|  |  └── index.spec.js
-|  ├── utils
-|  |  └── history.js
-|  ├── index.html
-|  ├── router.js
-|  └── style.css
-├── README.md
-└── package.json
-
-```
 
 ### 5.2 Definição do produto
 
@@ -167,6 +43,8 @@ detalhe:
 Depois de entender as necessidades de seus usuários, escreva as Histórias de
 Usuário. Elas representam tudo o que ele precisa fazer/ver na Rede Social. Cada
 uma de suas histórias de usuário deve possuir:
+
+
 
 - **Critérios de aceitação:** tudo o que deve acontecer para satisfazer as
   necessidades do usuário.
@@ -324,52 +202,3 @@ Instale as dependências do projeto rodando o comando `npm install`.
 
 Para iniciar sua aplicação web, use o comando `npm start` que usamos nos projetos anteriores. Com esse comando, você deve ver em `http://localhost:5000` uma página padrão do Firebase, que está sendo renderizada de `src/index.html`.
 
-### Mobile first
-
-O conceito de [_mobile
-first_](https://tableless.com.br/mobile-first-a-arte-de-pensar-com-foco/) faz
-referência a um processo de desenho e desenvolvimento que parte de como se vê e
-como funciona uma aplicação primeiro em um dispositivo móvel e mais adiante se
-analisa como adaptar a aplicação à telas progressivamente maiores. Esta é uma
-contraposição ao modelo tradicional, no qual primeiro se desenha os websites (ou
-webapps) para desktops e depois os adaptam para telas menores.
-
-A motivação aqui é se assegurar que desde o começo sejam desenhadas telas
-_responsivas_. Dessa forma, começamos com a aparência e o comportamento do
-aplicativo em uma tela e ambiente móvel.
-
-### Múltiplas telas
-
-Em projetos anteriores, nossas aplicações eram compostas de apenas uma tela
-_principal_ (uma só _página_). Neste projeto, precisaremos dividir nossa
-interface em várias _pages_ e oferecer uma maneira de navegar entre
-essas telas. Esse problema pode ser resolvido de várias maneiras: com arquivos
-HTML independentes (cada um com seu próprio URL) e links tradicionais; mantendo
-na memória e renderizando condicionalmente (sem atualizar a página);
-[manipulando o histórico do
-navegador](https://developer.mozilla.org/pt-BR/docs/Web/API/History_API#Navegando_atrav%C3%A9s_do_hist%C3%B3rico)
-com
-[`window.history`](https://developer.mozilla.org/pt-BR/docs/Web/API/History_API).
-Neste projeto, convidamos você a explorar opções e decidir sobre uma opção de
-implementação.
-
-### Gravação de dados
-
-Nos projetos anteriores, consumimos dados, mas ainda não tínhamos escrito dados
-(salvar alterações, criar dados, excluir, etc). Neste projeto, você precisará
-criar (salvar) novos dados, além de ler, atualizar e modificar os dados
-existentes. Esses dados podem ser salvos remotamente usando o
-[Firebase](https://firebase.google.com/).
-
-Outras:
-
-- [Mobile
-  First](https://tableless.com.br/mobile-first-a-arte-de-pensar-com-foco/)
-- [Mobile First Is NOT Mobile Only - Nielsen Norman
-  Group](https://www.nngroup.com/articles/mobile-first-not-mobile-only/)
-- [Flexbox - CSS
-  Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [Módulos:
-  Export](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/export)
-- [Módulos:
-  Import](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/import)
