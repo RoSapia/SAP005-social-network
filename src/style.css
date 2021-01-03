@@ -82,14 +82,26 @@ a{
       height: 20px;
   }
 
-#error-msg {
+#div-msg {
   padding-bottom: 15px
 }
 
 
-#div-login {
+#div-principal {
   display: table;
   margin: 0 auto;
   border: 1px solid black;
   padding: 50px
+}
+
+.text-post {
+  padding: 50px
+}
+
+.publish-box {
+  padding: 50px
+}
+
+.register-padding {
+  padding: 10px
 }

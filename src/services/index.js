@@ -1,11 +1,12 @@
 import { date } from "./utils.js"
 
 export const firebaseActions = {
-  createUser(email, password, callback) {
+  createUser(username, email, password, callback) {
       firebase.auth().createUserWithEmailAndPassword(email, password)
           .then((user) => {
             console.log('Deu certo!');
-            callback();
+            firebase.auth().currentUser.updateProfile({displayName: username})
+            callback(user);
           })
           .catch((error) => {
             callback(error);
@@ -47,13 +48,33 @@ export const firebaseActions = {
         user: firebase.auth().currentUser.email,
         publishText: publishText,
         createDate: date,
+        username: firebase.auth().currentUser.displayName,
         likes: 0
     })
     .then(function(docRef) {
+      console.log(firebase.auth().currentUser.displayName)
         console.log("Document written with ID: ", docRef.id);
+        callback()
     })
     .catch(function(error) {
         console.error("Error adding document: ", error);
     });
+  },
+  readPost(callback){
+    firebase.firestore().collection("posts").get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+      console.log(doc.data().publishText)
+      const id = doc.id
+      let postData = {
+        'username': doc.data().username,
+        'user': doc.data().user,
+        'publishText': doc.data().publishText,
+        'createDate': doc.data().createDate,
+        'likes': doc.data().likes,
+        'id': id.toString()
+      }
+      callback(postData)
+    });
+});
     }
 }

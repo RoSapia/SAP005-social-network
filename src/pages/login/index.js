@@ -4,11 +4,11 @@ import { returnFirebase } from "./utils.js"
 export const Login = () => {
     // Coloque sua página
     const rootElement = document.createElement('div');
-    rootElement.id = 'div-login'
+    rootElement.id = 'div-principal'
     rootElement.innerHTML = `
     <form name="form-login">
     <h1>LOGIN</h1>
-    <div id="error-msg"></div>
+    <div id="div-msg"></div>
     <label for="email"></label>
     <input type="email" id="email" name="email" placeholder="Email" autocomplete="on" required><br><br>
     <label for="senha"></label>
@@ -28,6 +28,7 @@ export const Login = () => {
     }).catch(function(error) {
     console.log('An error happened.')
     });
+
     // Faz login utilizando e-mail e senha
     const loginButton = rootElement.querySelector('#login-button')
     loginButton.addEventListener('click', (event) => {
