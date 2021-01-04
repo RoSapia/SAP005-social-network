@@ -1,80 +1,107 @@
 html{
-    background-image: url('images/Imagem\ Elza\ Elis.png');
-    background-size: cover;
-    /*background-position: center;
-    background-attachment: fixed;
-    background-clip: border-box;
-    background-repeat: no-repeat; */
-    font-family: "Inconsolata", sans-serif;
-    color: white;
+  background-image: url("images/wallpaper3.jpg");
+  background-size: cover;
+  /* background-position: center;
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-repeat: no-repeat; */
+  font-family: "Inconsolata", sans-serif;
+  color: white;
 }
 img{
-    background-position: center;
-    background-attachment: fixed;
-    /* background-clip: border-box; */
-    background-repeat: no-repeat;
-    max-width: 100%;
-    height: auto;
+  background-position: center;
+  background-attachment: fixed;
+  /* background-clip: border-box; */
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
 }
 
 .conteiner{
-    display:flex;
-    justify-content: space-around;
-    flex-direction: row; 
-    border:solid 1px;
-    border-radius:10px;  
-    border-color: white;
-    text-align: center;
-    
-}
-.Bemvindo{
-  text-align: center;
-}
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border:solid 1px;
+  border-radius:10px;
+  border-color: black;
 
-.LOGIN {
-  text-align: center;
-}
-
-form{
-    text-align: center;
-     width: 400px; 
-     margin-left: auto; 
-     margin-right: auto; 
-     margin-top: 10vw; 
-     border-radius: 20px; 
-     /*border: solid 1px;*/
-     background-color: linear-gradient(to bottom, transparent 80%, black 75%);
 }
 
 li:hover {
-    border:solid 1px;
-    border-radius: 10px;
+  border:solid 1px;
+  border-radius:0px;
 }
 
 a{
-    color: rgb(0, 181, 247);
-    text-decoration: none;
-  }
-  
-  a:link{
-    text-decoration: underline;
-  }
-  
-  .footer{
-    color: white;
-  /* background-color: #000000;*/
-    border-color: white;
-    padding: 2px 2px;
-    display: block;
+  color: rgb(0, 181, 247);
+  text-decoration: none;
+}
+
+a:link{
+  text-decoration: underline;
+}
+
+.footer{
+  color: white;
+  background-color: #000000;
+  border-style: groove;
+  border-color: rgb(89, 85, 85);
+  padding: 2px 2px;
+  display: block;
+  text-align: center;
+  font-family: Arial;
+  font-size: 10px;
+  letter-spacing: 2px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.google-button {
+    background-color: white;
+    border: none;
+    color: blue;
+    padding: 7px 16px;
     text-align: center;
-    font-family: Arial;
-   /* font-size: 10px;*/
-    letter-spacing: 2px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    border: solid 1px;
-    border-radius: 10px;
-    margin :5px;
-  }
+    text-decoration: none;
+    display: inline-block;
+    /* font-size: 16px; */
+    /* margin: 4px 2px; */
+    cursor: pointer;
+}
+.google-button .icon-google {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg) no-repeat;
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+.google-button .span {
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+
+#div-msg {
+padding-bottom: 15px
+}
+
+
+#div-principal {
+display: table;
+margin: 0 auto;
+border: 1px solid black;
+padding: 50px
+}
+
+.text-post {
+padding: 50px
+}
+
+.publish-box {
+padding: 50px
+}
+
+.register-padding {
+padding: 10px
+}
