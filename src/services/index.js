@@ -14,11 +14,10 @@ export const firebaseActions = {
 
   },
   loginUser(email, password, callback) {
-      console.log('chega aqui')
       firebase.auth().signInWithEmailAndPassword(email, password)
         .then((user) => {
           console.log(user);
-          callback()
+          callback(user)
         })
         .catch((error) => {
           console.log('não logou');
@@ -26,12 +25,14 @@ export const firebaseActions = {
           callback(error)
         });
   },
-  loginGoogle(provider, callback) {
-    firebase.auth().signInWithPopup(provider).then(function(result) {
-        callback()
-      }).catch(function(error) {
-        callback(error)
-      });
+  loginGoogle(callback) {
+    var provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider)
+      .then(function(result) {
+          callback(result)
+        }).catch(function(error) {
+          callback(error)
+        });
   },
   loginCheck(callback){
     firebase.auth().onAuthStateChanged(function(user) {
@@ -61,9 +62,28 @@ export const firebaseActions = {
     });
   },
   readPost(callback){
-    firebase.firestore().collection("posts").get().then((querySnapshot) => {
+    firebase.firestore().collection("posts").get()
+    .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          const id = doc.id
+          let postData = {
+            'username': doc.data().username,
+            'user': doc.data().user,
+            'publishText': doc.data().publishText,
+            'createDate': doc.data().createDate,
+            'likes': doc.data().likes,
+            'id': id.toString()
+          }
+          callback(postData)
+    });
+});
+  },
+  readUserPosts(callback){
+    firebase.firestore().collection("posts")
+    .where("user", "==", firebase.auth().currentUser.email).get()
+    .then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
-      console.log(doc.data().publishText)
+      console.log(doc.id, " => ", doc.data())
       const id = doc.id
       let postData = {
         'username': doc.data().username,
@@ -76,5 +96,5 @@ export const firebaseActions = {
       callback(postData)
     });
 });
-    }
+  }
 }

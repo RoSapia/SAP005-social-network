@@ -66,8 +66,6 @@ a{
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      /* font-size: 16px; */
-      /* margin: 4px 2px; */
       cursor: pointer;
   }
   .google-button .icon-google {
@@ -87,7 +85,7 @@ a{
 }
 
 
-#div-principal {
+#form-principal {
   display: table;
   margin: 0 auto;
   border: 1px solid black;

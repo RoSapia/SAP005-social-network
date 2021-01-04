@@ -3,10 +3,9 @@ import { returnFirebase } from "./utils.js"
 
 export const Login = () => {
     // Coloque sua página
-    const rootElement = document.createElement('div');
-    rootElement.id = 'div-principal'
+    const rootElement = document.createElement('form');
+    rootElement.id = 'form-principal'
     rootElement.innerHTML = `
-    <form name="form-login">
     <h1>LOGIN</h1>
     <div id="div-msg"></div>
     <label for="email"></label>
@@ -17,21 +16,23 @@ export const Login = () => {
     <p class='register'>Não possui conta?
     <a class='link-register' name="register" href='/register' id='register'> Registre-se</a>
     </p>
-    </form>
     <div class="google-login">
     Entrar com:
     <button class="google-button" id="google-button"><span class="icon-google"></span></button>
     </div>
 `;
-    firebase.auth().signOut().then(function() {
+
+    firebase.auth()
+    .signOut()
+    .then(function() {
     console.log('Sign-out successful.')
-    }).catch(function(error) {
+    })
+    .catch(function(error) {
     console.log('An error happened.')
     });
 
     // Faz login utilizando e-mail e senha
-    const loginButton = rootElement.querySelector('#login-button')
-    loginButton.addEventListener('click', (event) => {
+    rootElement.addEventListener('submit', (event) => {
       event.preventDefault();
       const email = rootElement.querySelector('#email').value
       const password = rootElement.querySelector('#password').value
@@ -42,9 +43,7 @@ export const Login = () => {
     const googleButton = rootElement.querySelector('#google-button')
     googleButton.addEventListener('click', (event) => {
       event.preventDefault();
-      let provider = new firebase.auth.GoogleAuthProvider();
-      firebaseActions.loginGoogle(provider, returnFirebase)
-      console.log('clicou')
+      firebaseActions.loginGoogle(returnFirebase)
     })
 
 
