@@ -6,6 +6,5 @@ export const returnFirebase = (response) => {
           divError.innerHTML = "Dados inválidos. Senha incorreta ou usuário não existe.";
         } else {
           onNavigate('/posts');
-          const divError = document.querySelector('#login')
         }
       }

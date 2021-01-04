@@ -4,7 +4,7 @@ import { Home } from './pages/home/index.js';
 import { Login } from './pages/login/index.js';
 import { Register } from './pages/register/index.js';
 import { Posts } from './pages/posts/index.js';
-import { Publish } from './pages/publish/index.js';
+import { EditPosts } from './pages/editPosts/index.js';
 
 const routeRender = () => {
     const rootDiv = document.getElementById('root');
@@ -14,7 +14,7 @@ const routeRender = () => {
         '/register': Register,
         '/cadastro': Register,
         '/posts': Posts,
-        '/publish': Publish
+        '/editPosts': EditPosts
 
     };
 
