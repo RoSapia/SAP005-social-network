@@ -1,0 +1,240 @@
+[33mcommit 9a2ea05361f7c1845dcd336278fc037636d2b7bf[m[33m ([m[1;36mHEAD -> [m[1;32mAdd[m[33m, [m[1;31morigin/atualizar2[m[33m, [m[1;32matualizar2[m[33m)[m
+Merge: 61f7f41 d5d12eb
+Author: RobertaKelly <robatucadas@hotmail.com>
+Date:   Thu Jan 7 12:12:39 2021 -0300
+
+    atualizandodados
+
+[33mcommit 61f7f41e0ca39500c5cb5028e43cfd831e05fb3b[m
+Author: RobertaKelly <robatucadas@hotmail.com>
+Date:   Mon Jan 4 17:08:55 2021 -0300
+
+    atualizando
+
+[33mcommit d5d12eb18214c9223f6d33b58eec1311061b94bd[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 95cf842 beca033
+Author: Roberta Vieira Sapia <60118825+RoSapia@users.noreply.github.com>
+Date:   Mon Jan 4 10:05:12 2021 -0300
+
+    Merge pull request #7 from RoSapia/scfirebase
+    
+    adicionando requisição de texto para envio de publicação
+
+[33mcommit beca033ae40299c88c9dc01608a84f92bd1c64bf[m[33m ([m[1;31morigin/scfirebase[m[33m)[m
+Author: RoSapia <rosapia@DESKTOP-BG3EG6H.localdomain>
+Date:   Mon Jan 4 10:03:15 2021 -0300
+
+    adicionando requisição de texto para envio de publicação
+
+[33mcommit 95cf84288fd7f9196352630071141c408d90dd8f[m
+Merge: 0fb7307 f5f5e2e
+Author: Roberta Vieira Sapia <60118825+RoSapia@users.noreply.github.com>
+Date:   Sun Jan 3 15:30:01 2021 -0300
+
+    Merge pull request #6 from RoSapia/scfirebase
+    
+    Scfirebase
+
+[33mcommit f5f5e2e9800c7784d1c2f225045143686c13cabc[m
+Author: RoSapia <rosapia@DESKTOP-BG3EG6H.localdomain>
+Date:   Sun Jan 3 15:03:09 2021 -0300
+
+    consertando bug cadastro e adicionando visualização de posts
+
+[33mcommit 5f2adef7c0a5c4a84f159a59326eddd5c2d25159[m[33m ([m[1;32matualizar[m[33m)[m
+Author: RobertaKelly <robatucadas@hotmail.com>
+Date:   Sat Jan 2 14:37:42 2021 -0300
+
+    alteracao
+
+[33mcommit 2237bb9538ba7895a513f48ca585009c6cf73229[m
+Author: RoSapia <rosapia@DESKTOP-BG3EG6H.localdomain>
+Date:   Sat Jan 2 11:23:28 2021 -0300
+
+    adicionando regras de login e criação de posts
+
+[33mcommit 0fb7307e0f4f55ffc3382ec446917bb3804ed13a[m
+Merge: c0bdba5 1b2edc1
+Author: Roberta Vieira Sapia <60118825+RoSapia@users.noreply.github.com>
+Date:   Fri Jan 1 19:38:04 2021 -0300
+
+    Merge pull request #5 from RoSapia/scfirebase
+    
+    adicionando página de publicações
+
+[33mcommit 1b2edc1a4219c4d7133576092fde9fbf70babb7d[m
+Author: RoSapia <rosapia@DESKTOP-BG3EG6H.localdomain>
+Date:   Fri Jan 1 19:35:59 2021 -0300
+
+    adicionando página de publicações
+
+[33mcommit c0bdba53d58d276801a1bbd0f23affeb776c3873[m
+Merge: 48fe725 6a9088b
+Author: Roberta Vieira Sapia <60118825+RoSapia@users.noreply.github.com>
+Date:   Fri Jan 1 16:28:19 2021 -0300
+
+    Merge pull request #4 from RoSapia/scfirebase
+    
+    Scfirebase
+
+[33mcommit 6a9088bace432657dffff301252f2ea94926f03b[m
+Author: RoSapia <rosapia@DESKTOP-BG3EG6H.localdomain>
+Date:   Fri Jan 1 16:26:31 2021 -0300
+
+    criando página de registro
+
+[33mcommit 06d14f0cad7c935a99eb1daf30785c0c0c90887d[m
+Author: RoSapia <rosapia@DESKTOP-BG3EG6H.localdomain>
+Date:   Fri Jan 1 15:01:02 2021 -0300
+
+    fazendo funcao de login
+
+[33mcommit 48fe7258468796a485eb11b9e1b465ca1082058f[m
+Merge: 17d7fe3 0c585e3
+Author: Roberta Vieira Sapia <60118825+RoSapia@users.noreply.github.com>
+Date:   Mon Dec 28 16:43:53 2020 -0300
+
+    Merge pull request #3 from RoSapia/scfirebase
+    
+    inserindo scripts firebase
+
+[33mcommit 0c585e3aaebaedc0e0ce486970eef32bd1989165[m[33m ([m[1;32mscfirebase[m[33m)[m
+Author: RoSapia <rosapia@DESKTOP-BG3EG6H.localdomain>
+Date:   Mon Dec 28 15:50:31 2020 -0300
+
+    inserindo scripts firebase
+
+[33mcommit 17d7fe31aadc35473a217c8d5e1e1532add16bf2[m
+Merge: f87ebef 009aedb
+Author: Roberta Vieira Sapia <60118825+RoSapia@users.noreply.github.com>
+Date:   Wed Dec 23 17:39:47 2020 -0300
+
+    Merge pull request #2 from RoSapia/navigation
+    
+    Navigation
+
+[33mcommit 009aedbae74749203a48498a4a2d1e42478ab94b[m[33m ([m[1;31morigin/navigation2[m[33m, [m[1;32mnavigation2[m[33m, [m[1;32mnavigation[m[33m)[m
+Author: unknown <saraazabel@gmail.com>
+Date:   Tue Dec 22 14:23:27 2020 -0300
+
+    login
+
+[33mcommit abd19030981b8468f165e5a16a1793b01118ff5d[m
+Author: unknown <saraazabel@gmail.com>
+Date:   Tue Dec 22 14:22:14 2020 -0300
+
+    login
+
+[33mcommit f87ebef443e0880659df6f643fe9140902b41f5a[m[33m ([m[1;32mmaster[m[33m, [m[1;32mDoc1[m[33m)[m
+Author: RoSapia <rosapia@DESKTOP-BG3EG6H.localdomain>
+Date:   Fri Dec 11 14:35:49 2020 -0300
+
+    logando no firebase
+
+[33mcommit b6243e0563b0509e8a4f30b34669b889628554d2[m
+Author: Cíntia Fumi <cintiafumi@gmail.com>
+Date:   Fri Dec 11 11:11:49 2020 -0300
+
+    docs(readme): remove duplicated instruction
+
+[33mcommit 916e7884971736704f275e715218d47476a09e1c[m
+Author: Cíntia Fumi <cintiafumi@gmail.com>
+Date:   Thu Dec 10 17:18:58 2020 -0300
+
+    docs(readme): fix code review info
+
+[33mcommit a44effd20b2ebb6b599a95d31b5a3be5d0c8af50[m
+Author: Cíntia Fumi <cintiafumi@gmail.com>
+Date:   Thu Dec 10 14:47:57 2020 -0300
+
+    chore(css): add empty style file
+
+[33mcommit e2c3e121672395ae60f8ebd63615489afc3ccd95[m
+Author: Cíntia Fumi <cintiafumi@gmail.com>
+Date:   Thu Dec 10 14:47:23 2020 -0300
+
+    docs(readme): change to production mode
+
+[33mcommit 197089ed7caca9bc598ba80d2173579ee458f7db[m
+Author: Cíntia Fumi <cintiafumi@gmail.com>
+Date:   Thu Dec 10 13:59:07 2020 -0300
+
+    docs(readme): fix firestore link
+
+[33mcommit aefb267cd04c7dc2a9cbcb9c26d61e7348a6ac84[m
+Author: Cíntia Fumi <cintiafumi@gmail.com>
+Date:   Thu Dec 10 12:01:39 2020 -0300
+
+    chore(html): removed unnecessary tag
+
+[33mcommit fa5d02e406c5568f6d41327a6e0bf24907ec9d19[m
+Author: Cíntia Fumi <cintiafumi@gmail.com>
+Date:   Thu Dec 10 12:00:49 2020 -0300
+
+    docs(readme): changed boilerplate structure
+
+[33mcommit ea79960bb9ce32c6f13fe472fe0e24b910697f0d[m
+Author: Rafael Cerri <rafaelbcerri@gmail.com>
+Date:   Thu Dec 10 11:18:40 2020 -0300
+
+    Add router to boilerplate
+
+[33mcommit 631556998d383b8618e31b55381e5cbe518c9816[m
+Author: Cíntia Fumi <cintiafumi@gmail.com>
+Date:   Wed Dec 9 18:15:46 2020 -0300
+
+    docs(readme): removed localStorage
+
+[33mcommit 58c17f2b5c1b0d46d98e7fd61e5795dfec1f239c[m
+Author: Cíntia Fumi <cintiafumi@gmail.com>
+Date:   Wed Dec 9 17:40:48 2020 -0300
+
+    docs(readme): add firebase init instructions
+
+[33mcommit b26603bdaa370236639fbc83b27f4170eecea0ea[m
+Author: Cíntia Fumi <cintiafumi@gmail.com>
+Date:   Mon Dec 7 21:21:13 2020 -0300
+
+    chore(js): changed elements creation
+
+[33mcommit afd3fab2202f0bdddd6b07853cb8447501995525[m
+Author: Cíntia Fumi <cintiafumi@gmail.com>
+Date:   Sun Dec 6 20:35:21 2020 -0300
+
+    docs(readme): change instructions position
+
+[33mcommit 77b4c748e8cd33b92b356bd78f8e491234686990[m
+Author: Cíntia Fumi <cintiafumi@gmail.com>
+Date:   Sun Dec 6 20:29:12 2020 -0300
+
+    chore(gitignore): ignore firebase-debug.log
+
+[33mcommit db6e992d7780b9dc18902332e8819ca77ae71817[m
+Author: Cíntia Fumi <cintiafumi@gmail.com>
+Date:   Sun Dec 6 20:28:13 2020 -0300
+
+    chore(src): folder structure
+
+[33mcommit 4e24b1dba7b19f58ff5aabb84adb2f81b7306a42[m
+Author: Cíntia Fumi <cintiafumi@gmail.com>
+Date:   Sun Dec 6 20:27:14 2020 -0300
+
+    chore(firebase): add firebase.json file
+
+[33mcommit 72f0100ea2f6af337935f2908e978893046aebde[m
+Author: Cíntia Fumi <cintiafumi@gmail.com>
+Date:   Sun Dec 6 20:22:30 2020 -0300
+
+    styles(lint): add stylelint config
+
+[33mcommit ac33f1c77d5e2f3a06e454f7d01e5531e91d9029[m
+Author: Cíntia Fumi <cintiafumi@gmail.com>
+Date:   Sun Dec 6 20:21:58 2020 -0300
+
+    chore(config): add general settings
+
+[33mcommit 54988d1dc8d40b7c323fd3ff086a29ddbb463bf4[m
+Author: Cíntia Fumi <cintiafumi@gmail.com>
+Date:   Fri Dec 4 23:57:09 2020 -0300
+
+    docs(readme): add README
