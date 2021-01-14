@@ -23,7 +23,7 @@ export const returnPosts = (response) => {
           idPost.innerHTML = '<div id="user">' + response.username + '</div>' +
          '<div id="createDate">' + response.createDate + '</div>' +
          '<div id="publishText">' + response.publishText + '</div>' +
-         '<div id="likes"> Likes: ' + response.likes + '</div>'
+         '<div id="likes">Likes: ' + response.likes + '</div>'
         }
       }
 

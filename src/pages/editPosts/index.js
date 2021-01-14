@@ -1,6 +1,6 @@
 import { firebaseActions } from "../../services/index.js"
 import { returnCheckUser, returnUserPosts } from "./utils.js"
-// import { onNavigate } from '../../utils/history.js';
+//import { onNavigate } from '../../utils/history.js'
 
 export const EditPosts = () => {
     firebaseActions.loginCheck(returnCheckUser)
@@ -21,12 +21,23 @@ export const EditPosts = () => {
 
 firebaseActions.readUserPosts(returnUserPosts)
 
-// Exclui postagem
-/*const editPostsButton = rootElement.querySelector('#edit-posts-button')
+
+/*const deletePostsButton = rootElement.querySelector('#delete-button')
+if (deletePostsButton) {
+  deletePostsButton.addEventListener('click',(event) => {
+    onNavigate('/editPosts')
+  })
+}*/
+
+//Exclui postagem
+const editPostsButton = rootElement.querySelector('#edit-posts-button')
 if (editPostsButton) {
   editPostsButton.addEventListener('click', (event) => {
     onNavigate('/editPosts')
-  })*/
+  })
+}
+
+
 
 
 return rootElement;

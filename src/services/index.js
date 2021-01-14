@@ -50,7 +50,7 @@ export const firebaseActions = {
         publishText: publishText,
         createDate: date,
         username: firebase.auth().currentUser.displayName,
-        likes: 0
+        likes: 0 
     })
     .then(function(docRef) {
       console.log(firebase.auth().currentUser.displayName)
@@ -90,7 +90,7 @@ export const firebaseActions = {
         'user': doc.data().user,
         'publishText': doc.data().publishText,
         'createDate': doc.data().createDate,
-        'likes': doc.data().likes,
+        'likes': doc.data().likes, 
         'id': id.toString()
       }
       callback(postData)

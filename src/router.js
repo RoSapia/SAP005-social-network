@@ -6,6 +6,7 @@ import { Register } from './pages/register/index.js';
 import { Posts } from './pages/posts/index.js';
 import { EditPosts } from './pages/editPosts/index.js';
 
+
 const routeRender = () => {
     const rootDiv = document.getElementById('root');
     const routes = {
@@ -15,7 +16,7 @@ const routeRender = () => {
         '/cadastro': Register,
         '/posts': Posts,
         '/editPosts': EditPosts
-
+    
     };
 
     rootDiv.innerHTML = '';

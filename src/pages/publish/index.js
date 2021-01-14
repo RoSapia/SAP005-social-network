@@ -13,6 +13,7 @@ export const Publish = () => {
     <div class="about-post">
         <button id="edit-post">Editar Publicação</p>
         <button id="delete-post">Excluir Publicação</p>
+        <button id="likes-post">Likes</p>
     </div>       
 `;
 return rootElement;
