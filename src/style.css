@@ -1,127 +1,222 @@
-*{margin: 0; padding: 0;}
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+*{
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html{
-    background-image: url("images/wallpaper3.jpg");
-    background-size: cover;
-    /* background-position: center;
-    background-attachment: fixed;
-    background-clip: border-box;
-    background-repeat: no-repeat; */
-    font-family: "Inconsolata", sans-serif;
-    color: white;
+  background-image: url("images/elzaelis.png");
+  background-size: cover;
+  /* background-position: center;
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-repeat: no-repeat; */
+  font-family: 'Abel', sans-serif;
+  color: white;
+  height: 100vh;
 }
 
 img{
-    background-position: center;
-    background-attachment: fixed;
-    /* background-clip: border-box; */
-    background-repeat: no-repeat;
-    max-width: 100%;
-    height: auto;
+  background-position: center;
+  background-attachment: fixed;
+  /* background-clip: border-box; */
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 100vh;
+  
 }
 
-ul{
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    background-color: black;
-    margin: 0;
-    padding: 1% 72%;
+.navigation{
+  color: white;
+  background-color: black;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row; 
+  border:1px solid #c0c0c0;
+  float:left;  
+  border-color: black;
+  /* opacity: 70%; */
 }
-  
-li{
-    margin: 0;
-    display:flex;
-    justify-content:center;
-    padding: 5px 30px;
-    float:left;
+
+.navigation ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  background-color: black;
+  margin: 0;
+  padding: 2% 122%;
+}
+
+.navigation li{
+  margin: 0;
+  display:flex;
+  justify-content:center;
+  padding: 5px 30px;
+  float:left;
+/*   position:relative; */
+  border-right:1px solid rgb(247 0 57);
+}
+
+.navigation li:hover{
+  background: transparent;
+  color: rgb(247, 9, 29);
 }
 
 .conteiner{
-    color: white;
-    background-color: black;
-    display:flex;
-    justify-content: space-between;
-    flex-direction: row; 
-    border:1px solid #c0c0c0;
-    float:left;  
-    border-color: black;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 120vh;
+  text-align:center;
 }
 
-.conteiner li{
-    position:relative;
-    float:left;
-    border-right:1px solid rgb(247 0 57);
-   
+.first-content,
+.second-content{
+  background-color: black;
+  border-radius: 15px;
+  width: 40%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  /* opacity: 70%; */
 }
 
-li:hover{
-background:rgb(14, 14, 14);
-color:rgba(234, 6, 55);
--moz-box-shadow:0 3px 10px 0 #1d181c;
--webkit-box-shadow:0 3px 10px 0 #5a5359;
-text-shadow:0px 0px 5px #191717;
+.title{
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.description{
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+  line-height:40px;
+}
+
+.btn, .register-button{
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+  padding: 10px 40px;
+  margin: 20px;
+  background-color:transparent;
+  width: 150px;
+  align-self: center;
+  border: 1px solid white;
+  background-color: rgb(247 0 57);
+}
+
+.btn:hover, .register-button:hover{
+  background-color: black;
+}
+
+.list-social-media{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  list-style-type: none;
+}
+
+.item-social-media{
+  border: 1px solid #bdc3c7;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align:center;
+}
+
+#google-button{
+  color: rgb(247 0 57);
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  /* padding: 25px 0px; */
+  width: 100%;
+}
+
+.form input{
+  height: 45px;
+  border: none;
+  background-color: #ecf0f1;
+  margin: 8px;
+  font-size: 15px;
+  text-align:center;
+}
+
+.icon-modify{
+  color: rgb(247 0 57);
 }
 
 a{
-    color: rgb(0, 181, 247);
-    text-decoration: none;
+  color: rgb(199 146 159 / 97%);
+  text-decoration: none;
 }
   
 a:link{
-    text-decoration: underline;
+  text-decoration: underline;
 }
   
 .footer{
-    color: white;
-    background-color: #000000;
-    border-style: groove;
-    border-color: rgb(89, 85, 85);
-    padding: 2px 2px;
-    display: block;
-    text-align: center;
-    font-family: Arial;
-    font-size: 10px;
-    letter-spacing: 2px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+  color: white;
+  background-color: #000000;
+  border-style: groove;
+  border-color: rgb(89, 85, 85);
+  padding: 2px 2px;
+  display: block;
+  text-align: center;
+  font-family: Arial;
+  font-size: 10px;
+  letter-spacing: 2px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .google-button {
-    background-color: white;
-    border: none;
-    color: blue;
-    padding: 7px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    /* font-size: 16px; */
-    /* margin: 4px 2px; */
-    cursor: pointer;
+  background-color: white;
+  border: none;
+  color: blue;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
 }
+
 .google-button .icon-google {
-    background: url(https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg) no-repeat;
-    float: left;
-    width: 20px;
-    height: 20px;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg) no-repeat;
+  float: left;
+  width: 20px;
+  height: 20px;
 }
 .google-button .span {
-    float: left;
-    width: 20px;
-    height: 20px;
-}
-
-#error-msg {
-padding-bottom: 15px
+  float: left;
+  width: 20px;
+  height: 20px;
 }
 
 
-#div-login {
-display: table;
-margin: 0 auto;
-border: 1px solid black;
-padding: 50px
+/* #div-principal {
+  display: table;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 50px
+} */
+
+.text-post {
+  padding: 50px
 }
+
+.publish-box {
+  padding: 50px
+}
+

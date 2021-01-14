@@ -2,38 +2,57 @@ import { firebaseActions } from "../../services/index.js"
 import { returnFirebase } from "./utils.js"
 
 export const Login = () => {
-    // Coloque sua página
-    const rootElement = document.createElement('div');
-    rootElement.id = 'div-login'
-    rootElement.innerHTML = `
-    <form name="form-login">
-    <h1>LOGIN</h1>
-    <div id="error-msg"></div>
-    <label for="email"></label>
-    <input type="email" id="email" name="email" placeholder="Email" autocomplete="on" required><br><br>
-    <label for="senha"></label>
-    <input type="password" id="password" name="password" placeholder="Senha" autocomplete="off" inputmode="numeric" minlength="6" title="Digite uma senha de no mínimo 4 dígitos!" required><br><br>
-    <input type="submit" id="login-button" value="Sign in">
-    <p class='register'>Não possui conta?
-    <a class='link-register' name="register" href='/register' id='register'> Registre-se</a>
-    </p>
-    </form>
-    <div class="google-login">
-    Entrar com:
-    <button class="google-button" id="google-button"><span class="icon-google"></span></button>
+  const rootElement = document.createElement('div');
+  rootElement.id = 'div-principal'
+  rootElement.innerHTML = `
+    <div class='conteiner'>
+      <div class='second-content'>
+        <div class='second column'>
+          <h2 class='title'>Entrar no WoPlay</h2>
+          <div class='social-media'>
+            <ul class='list-social-media'>
+              <a href='' class='link-social-media'>
+                <li class='item-social-media' id='google-button'>
+                  <i class="fab fa-google" id='google-button'></i>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <p class='description'>ou use seu email:</p>
+          <form class='form'>
+            <label class='label-input'>
+              <i class="far fa-envelope icon-modify"></i>
+              <input type='email' class='email' placeholder='Email' autocomplete='on' required></input>
+            </label>
+
+            <label class='label-input'>
+              <i class="fas fa-lock icon-modify"></i>
+              <input type='password' class='password' placeholder='Senha' autocomplete='off' minlength='6' title='Digite uma senha de no mínimo 4 dígitos!' required></input>
+            </label>
+
+            <a href='#'>esqueci minha senha</a>
+            <button class='btn' type='submit'>entrar</button>
+          </form>
+        </div>
+      </div>
+
     </div>
-`;
-    firebase.auth().signOut().then(function() {
-    console.log('Sign-out successful.')
-    }).catch(function(error) {
-    console.log('An error happened.')
+  `;
+
+    firebase.auth()
+    .signOut()
+    .then(function() {
+      console.log('Sign-out successful.')
+    })
+    .catch(function(error) {
+      console.log('An error happened.')
     });
+
     // Faz login utilizando e-mail e senha
-    const loginButton = rootElement.querySelector('#login-button')
-    loginButton.addEventListener('click', (event) => {
+    rootElement.addEventListener('submit', (event) => {
       event.preventDefault();
-      const email = rootElement.querySelector('#email').value
-      const password = rootElement.querySelector('#password').value
+      const email = rootElement.querySelector('.email').value
+      const password = rootElement.querySelector('.password').value
       firebaseActions.loginUser(email, password, returnFirebase)
     })
 
@@ -41,11 +60,7 @@ export const Login = () => {
     const googleButton = rootElement.querySelector('#google-button')
     googleButton.addEventListener('click', (event) => {
       event.preventDefault();
-      let provider = new firebase.auth.GoogleAuthProvider();
-      firebaseActions.loginGoogle(provider, returnFirebase)
-      console.log('clicou')
+      firebaseActions.loginGoogle(returnFirebase)
     })
-
-
     return rootElement;
 };

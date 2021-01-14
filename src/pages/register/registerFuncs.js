@@ -10,9 +10,10 @@ export const loginActions = {
 }
 
 const errorFirebase = (error) => {
-        if (error instanceof Error) {
-          invalidFirebaseLogin.push(error);
-          validationLogin.innerHTML = invalidFirebaseLogin.join('');
-        } else {
-          window.location.assign(window.location.origin);
-        } }
+  if (error instanceof Error) {
+    invalidFirebaseLogin.push(error);
+    validationLogin.innerHTML = invalidFirebaseLogin.join('');
+  } else {
+    window.location.assign(window.location.origin);
+  } 
+}
