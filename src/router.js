@@ -13,7 +13,6 @@ const routeRender = () => {
         '/': Home,
         '/login': Login,
         '/register': Register,
-        '/cadastro': Register,
         '/posts': Posts,
         '/editPosts': EditPosts
     
@@ -22,7 +21,6 @@ const routeRender = () => {
     rootDiv.innerHTML = '';
     rootDiv.appendChild(routes[window.location.pathname]());	
 };
-
     window.addEventListener('popstate', routeRender);
     window.addEventListener('load', () => {
     document	 

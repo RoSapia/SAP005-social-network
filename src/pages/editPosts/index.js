@@ -8,27 +8,15 @@ export const EditPosts = () => {
     const rootElement = document.createElement('div');
     rootElement.id = 'div-principal'
     rootElement.innerHTML = `
-
     <div class="user">
           <h3>Suas publicações</h3>
       </div>
-
       <div id="publish-post">
           <p>Todas as publicações:</p>
       </div>
 `;
 
-
 firebaseActions.readUserPosts(returnUserPosts)
-
-
-/*const deletePostsButton = rootElement.querySelector('#delete-button')
-if (deletePostsButton) {
-  deletePostsButton.addEventListener('click',(event) => {
-    onNavigate('/editPosts')
-  })
-}*/
-
 //Exclui postagem
 const editPostsButton = rootElement.querySelector('#edit-posts-button')
 if (editPostsButton) {
@@ -36,9 +24,5 @@ if (editPostsButton) {
     onNavigate('/editPosts')
   })
 }
-
-
-
-
 return rootElement;
 };
