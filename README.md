@@ -19,7 +19,7 @@ onde elas teram acesso a contato de outras Musicistas troca de informações com
 
 ## 2. Pesquisa de Usuários 
 
-Trabalhamos com um formulario de pesquisa , e apartir das infromações foram elaboradas o perfil de usuários e detalhes que seram utilizados da plataforma.
+Trabalhamos com um formulário de pesquisa , e apartir das infromações foram elaborados o perfil de usuários e detalhes que seram utilizados da plataforma.
 
 ![Pesquisa de usuario](https://github.com/RoSapia/SAP005-social-network/blob/master/Rede%20Sociais%20%20(1).jpg)
 
@@ -67,7 +67,7 @@ Os pricipais Usuários são Mulheres que trabalham na areá musical e admiradora
  - Qual problema o produto resolve/para que ele serve para esses usuários.
 
 * Essa Interface é uma Rede Social voltada somente para Mulheres da aréa Musical ou interessadas no assunto. 
-Em nossa plataforma as Usuárias porém ter acesso e entrar em contato com outras Mulheres da aréa musical, poderá publicar mensagens e curtir mensagens de outras usuárias que também utilizam a plataforma. 
+Em nossa plataforma as Usuárias poderam ter acesso e entrar em contato com outras Mulheres da aréa musical, poderá publicar mensagens e curtir mensagens de outras usuárias que também utilizam a plataforma. 
 
 ## 5. Protótipo da Interface
  ![Protótipo](https://github.com/RoSapia/SAP005-social-network/blob/master/Rede%20Sociais%20.jpg)
@@ -76,9 +76,17 @@ Em nossa plataforma as Usuárias porém ter acesso e entrar em contato com outra
  
 ### 5.3 Histórias de usuário
 
-Depois de entender as necessidades de seus usuários, escreva as Histórias de
-Usuário. Elas representam tudo o que ele precisa fazer/ver na Rede Social. Cada
-uma de suas histórias de usuário deve possuir:
+* Chistiane 55 anos, Mult-instrumentista , estilo musicais Jazz, Samba, Mpb, Erudito, professora viaja o mundo trabalhando com musica , tem interesse em usar a plataforma para conhecer mais mulheres que trabalham na área e alunas que tenha interesse em aula.
+
+ * Ana 47 anos, Corretoras de imóveis, estilos Samba e MPB, Groove, toca percussão e canta , tem interesse em utilizar a plataforma para conhecer mais mulheres e criar um grupo.
+
+* Simone 50 anos, percussionista e Bateristas, estilos musicais Jazz , Mpb, Samba, acompanha e já acompanhou diversos artistas no mundo todo, tem interesse em acessar a página para acessar partituras concertos e experiência na área com outras mulheres.
+
+* Juliana 27 anos, Musicoterapeuta toca percussão e tem interesse em utilizar a página para criar grupos de estudos e divulgar seu trabalho como Terapeita.
+
+* Joana 34 anos, Contrabaixistas estilo musical , Rock e Punk Rock, tem interesse em vagas para bandas e eventos e conhecer outras mulher musicistas e grupo de estudo.
+
+* Eliane 26 anos, Guitarristas estilos musicais Rock, Punk, Hardcore. Tem interesse conhecer outras mulheres instrumentistas, grupo de estudos e vagas para banda .
 
 
 ## 6. Fluxograma 
