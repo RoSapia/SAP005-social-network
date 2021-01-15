@@ -14,12 +14,12 @@ export const MyPosts = () => {
       </div>
 
       <div id="publish-post">
-          <p>Todas as publicações:</p>
+          <p>Todas as suas publicações:</p>
       </div>
 `;
 
 
-firebaseActions.readUserPosts(returnUserPosts)
+    firebaseActions.readUserPosts(returnUserPosts)
 
-return rootElement;
+    return rootElement;
 };

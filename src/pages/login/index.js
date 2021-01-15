@@ -3,13 +3,13 @@ import { returnFirebase } from "./utils.js"
 
 export const Login = () => {
     // Coloque sua página
-  const rootElement = document.createElement('div');
-  rootElement.id = 'div-principal'
-  rootElement.innerHTML = `
+    const rootElement = document.createElement('div');
+    rootElement.id = 'div-principal'
+    rootElement.innerHTML = `
     <div class='conteiner'>
       <div class='second-content'>
         <div class='second column'>
-          <h2 class='title'>Entrar no WoPlay</h2>
+          <h2 class='title'>Entrar com o Google:</h2>
           <div class='social-media'>
             <ul class='list-social-media'>
               <a href='' class='link-social-media'>
@@ -27,10 +27,11 @@ export const Login = () => {
             </label>
             <label class='label-input'>
               <i class="fas fa-lock icon-modify"></i>
-              <input type='password' class='password' placeholder='Senha' autocomplete='off' minlength='6' title='Digite uma senha de no mínimo 4 dígitos!' required></input>
+              <input type='password' class='password' placeholder='Senha' autocomplete='off' minlength='6' title='Digite uma senha de no mínimo 6 dígitos!' required></input>
             </label>
-
-            <a href='#'>esqueci minha senha</a>
+            <p class='register'>Não possui conta?
+            <a class='link-register' name="register" href='/register' id='register'> Cadastre-se</a>
+            </p>
             <button class='btn' type='submit'>entrar</button>
           </form>
         </div>
@@ -40,27 +41,27 @@ export const Login = () => {
   `;
 
     firebase.auth()
-    .signOut()
-    .then(function() {
-      console.log('Sign-out successful.')
-    })
-    .catch(function(error) {
-      console.log('An error happened.')
-    });
+        .signOut()
+        .then(function() {
+            console.log('Sign-out successful.')
+        })
+        .catch(function(error) {
+            console.log('An error happened.')
+        });
 
     // Faz login utilizando e-mail e senha
     rootElement.addEventListener('submit', (event) => {
-      event.preventDefault();
-      const email = rootElement.querySelector('.email').value
-      const password = rootElement.querySelector('.password').value
-      firebaseActions.loginUser(email, password, returnFirebase)
+        event.preventDefault();
+        const email = rootElement.querySelector('.email').value
+        const password = rootElement.querySelector('.password').value
+        firebaseActions.loginUser(email, password, returnFirebase)
     })
 
     // Login via Google
     const googleButton = rootElement.querySelector('#google-button')
     googleButton.addEventListener('click', (event) => {
-      event.preventDefault();
-      firebaseActions.loginGoogle(returnFirebase)
+        event.preventDefault();
+        firebaseActions.loginGoogle(returnFirebase)
     })
     return rootElement;
 };
