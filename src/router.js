@@ -7,6 +7,7 @@ import { Posts } from './pages/posts/index.js';
 import { MyPosts } from './pages/myPosts/index.js';
 import { EditPosts } from './pages/editPosts/index.js';
 
+
 const routeRender = () => {
     const rootDiv = document.getElementById('root');
     const routes = {
@@ -24,25 +25,25 @@ const routeRender = () => {
     rootDiv.appendChild(routes[window.location.pathname]());
 };
 
-window.addEventListener('popstate', routeRender);
-window.addEventListener('load', () => {
-    document
-        .getElementById('home')
-        .addEventListener('click', (e) => {
-            e.preventDefault();
-            onNavigate('/')
-        });
-    document
-        .getElementById('login')
-        .addEventListener('click', (e) => {
-            e.preventDefault();
-            onNavigate('/login')
-        });
-    document
-        .getElementById('cadastro')
-        .addEventListener('click', (e) => {
-            e.preventDefault();
-            onNavigate('/register')
-        });
-    routeRender();
+    window.addEventListener('popstate', routeRender);
+    window.addEventListener('load', () => {
+    document	 
+        .getElementById('home')	   
+        .addEventListener('click', (e) => {	      
+            e.preventDefault();	           
+            onNavigate('/');	            
+        });	   
+    document	   
+        .getElementById('login')	        
+        .addEventListener('click', (e) => {	    
+            e.preventDefault();	        
+            onNavigate('/login')	      
+        });	   
+ document  
+.getElementById('cadastro')
+.addEventListener('click', (e) => {
+    e.preventDefault();
+    onNavigate('/register')
+});  
+routeRender();  
 });
