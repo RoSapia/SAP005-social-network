@@ -54,7 +54,7 @@ Trabalhamos com um formulario de pesquisa , e apartir das infromações foram el
   - Foram efetuados testes de usabilidade e incorporar o _feedback_ dos usuários como
     melhorias.
 
-  - Quem são os principais usuários do produto.
+ ## Quem são os principais usuários do produto.
 Os pricipais Usuários são Mulheres que trabalham na areá musical e admiradoras.
  Exemplo : 
  * Estudande de Música
