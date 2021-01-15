@@ -7,7 +7,6 @@ export const EditPosts = () => {
     const rootElement = document.createElement('form');
     rootElement.id = 'form-principal-edit'
     rootElement.innerHTML = `
-
       <div class="user">
           <span>Olá </span>
           <span id="username"></span>

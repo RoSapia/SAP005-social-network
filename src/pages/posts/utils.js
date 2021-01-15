@@ -8,7 +8,7 @@ export const returnCheckUser = (response) => {
           username.innerHTML = response.displayName + ","
         } else {
           onNavigate('/login');
-          const divError = document.querySelector('#div-msg')
+          const divError = document.querySelector('.conteiner')
           divError.innerHTML = "Você não pode acessar esta pagina sem estar logado. Por favor, efetue o login abaixo!";
         }
       }

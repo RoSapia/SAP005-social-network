@@ -6,3 +6,4 @@ export const returnMyPosts = (response) => {
           onNavigate('/myPosts');
         
       }
+

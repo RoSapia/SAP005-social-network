@@ -5,7 +5,7 @@ import { onNavigate } from '../../utils/history.js';
 export const Posts = () => {
     firebaseActions.loginCheck(returnCheckUser)
 
-    const rootElement = document.createElement('div');
+    const rootElement = document.createElement('form');
     rootElement.id = 'div-principal'
     rootElement.innerHTML = `
       <form id="form-principal">
@@ -42,5 +42,6 @@ export const Posts = () => {
       })
 
       return rootElement;
+
 };
 

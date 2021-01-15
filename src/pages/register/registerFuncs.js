@@ -1,10 +1,10 @@
 import { firebaseActions } from "../../services/index.js"
 
 export const loginActions = {
-  loginUser(el) {
-    el.loginButton.addEventListener("click", (event) => {
+  createUser(el) {
+    el.registerButton.addEventListener("click", (event) => {
       event.preventDefault();
-      firebaseActions.loginUser(el.email.value, el.password.value, errorFirebase)
+      firebaseActions.createUser(el.email.value, el.password.value, errorFirebase)
     });
   }
 }
@@ -15,5 +15,5 @@ const errorFirebase = (error) => {
     validationLogin.innerHTML = invalidFirebaseLogin.join('');
   } else {
     window.location.assign(window.location.origin);
-  }
+  } 
 }

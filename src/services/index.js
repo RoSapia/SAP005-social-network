@@ -69,8 +69,8 @@ export const firebaseActions = {
         querySnapshot.forEach((doc) => {
           const id = doc.id
           let postData = {
-            'username': doc.data().username,
-            'user': doc.data().user,
+            
+            
             'publishText': doc.data().publishText,
             'createDate': doc.data().createDate,
             'likes': doc.data().likes,
