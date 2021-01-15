@@ -6,9 +6,9 @@
 - [2. Pesquisa de Usuarios ](#2-pesquisa-de-usuario )
 - [3. Definição de Usuário](#3-definição-de-usuário)
 - [4. Definição do Produto ](#4-definição-de-produto)
-- [5. Desenho da Interface](#5-desenho-interface)
+- [5. Protótipo da Interface](#5-Protótipo-interface)
 - [6. Fluxograma](#6-Fluxograma)
-- [7. Interface](#7-interface)
+- [7. Imagens da Interface](#7-Imagens-da-interface)
 - [8. Funcionamento da Interface](#8-Funcionamento-da-interface)
 - [9. Autoras](#9-Autoras)
 
@@ -24,7 +24,7 @@ Trabalhamos com um formulario de pesquisa , e apartir das infromações foram el
 ![Pesquisa de usuario](https://github.com/RoSapia/SAP005-social-network/blob/master/Rede%20Sociais%20%20(1).jpg)
 
 
-## 3. Definição de Usuário e História 
+## 3. Definição de Usuário
 ![Perfil de Usuárias](https://github.com/RoSapia/SAP005-social-network/blob/master/Rede%20Sociais%20%20(2).jpg)
 
 
@@ -59,17 +59,17 @@ Os pricipais Usuários são Mulheres que trabalham na areá musical e admiradora
  Exemplo : 
  * Estudande de Música
  * Professoras
- Musiscistas profissionais
- Musicoterapeutas
- Produtoras 
- Hobistas
+ * Musiscistas profissionais
+ * Musicoterapeutas
+ * Produtoras 
+ * Hobistas
 
  - Qual problema o produto resolve/para que ele serve para esses usuários.
 
 * Essa Interface é uma Rede Social voltada somente para Mulheres da aréa Musical ou interessadas no assunto. 
 Em nossa plataforma as Usuárias porém ter acesso e entrar em contato com outras Mulheres da aréa musical, poderá publicar mensagens e curtir mensagens de outras usuárias que também utilizam a plataforma. 
 
-## 5. Desenho da Interface
+## 5. Protótipo da Interface
  ![Protótipo](https://github.com/RoSapia/SAP005-social-network/blob/master/Rede%20Sociais%20.jpg)
 
 
@@ -84,7 +84,7 @@ uma de suas histórias de usuário deve possuir:
 ## 6. Fluxograma 
 ![Fluxograma](https://github.com/RoSapia/SAP005-social-network/blob/master/Fluxograma%20Rede%20Mulheres%20Musicistas.jpg)
 
-## 7. Interface 
+## 7. Imagens da Interface 
 ![Imagens Interface 1](https://github.com/RoSapia/SAP005-social-network/blob/master/Rede%20Sociais%20Interface.jpg)
 
 ![Imagens Interface 2](https://github.com/RoSapia/SAP005-social-network/blob/master/Rede%20Sociais%20%20Interface%202.jpg)
@@ -93,7 +93,6 @@ uma de suas histórias de usuário deve possuir:
 
 .Como a Interface Funciona
 A Usuária poderá acessar a rede social fazendo cadastro em menu Login ou através da sua conta Google, utilizando os demais menus com seguintes opções :
-
 *	Home Inicial (Mensagens de Boas Vindas)
 *	Login (Criar um Perfil com nome e inserir senha)
 *	Publicar (compartilhar texto e informações com as usuárias) 
