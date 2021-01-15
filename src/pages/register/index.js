@@ -2,7 +2,7 @@ import { firebaseActions } from "../../services/index.js"
 import { returnFirebase } from "./utils.js"
 
 export const Register = () => {
-    const rootElement = document.createElement('div');
+    const rootElement = document.createElement('div')
     rootElement.id = 'div-principal'
     rootElement.innerHTML = `
     <div class='conteiner'>
@@ -30,7 +30,7 @@ export const Register = () => {
         </div>
       </div>
     </div>
-  `;
+  `
 
     // Cria login utilizando e-mail e senha
     const registerButton = rootElement.querySelector('.register-button')
@@ -42,5 +42,5 @@ export const Register = () => {
         firebaseActions.createUser(username, email, password, returnFirebase)
     })
 
-    return rootElement;
-};
+    return rootElement
+}

@@ -9,7 +9,7 @@ export const Login = () => {
     <div class='conteiner'>
       <div class='second-content'>
         <div class='second column'>
-          <h2 class='title'>Entrar com o Google:</h2>
+          <h2 class='title'>Entrar:</h2>
           <div class='social-media'>
             <ul class='list-social-media'>
               <a href='' class='link-social-media'>

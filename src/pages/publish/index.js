@@ -3,7 +3,7 @@ import { returnPublish } from "./utils.js"
 
 export const Publish = () => {
     firebaseActions.loginCheck(returnPublish)
-    const rootElement = document.createElement('form');
+    const rootElement = document.createElement('form')
     rootElement.id = 'publish'
     rootElement.innerHTML = `
         <label for="title">Criar Publicação</label>
@@ -18,7 +18,7 @@ export const Publish = () => {
         <div>
             <button id="send-post">Enviar</button>
         </div>
-    `;
+    `
 
     // Salva uma publicação
     const createPost = rootElement.querySelector('#send-post')
@@ -27,5 +27,5 @@ export const Publish = () => {
         const text = rootElement.querySelector('#text-post').value
         firebaseActions.createPost(text, returnPublish)
     })
-    return rootElement;
-};
+    return rootElement
+}

@@ -2,8 +2,6 @@ import { firebaseActions } from "../../services/index.js"
 import { returnMyPosts } from "./utils.js"
 
 export const EditPosts = () => {
-    //firebaseActions.loginCheck(returnCheckUser)
-
     const rootElement = document.createElement('form');
     rootElement.id = 'form-principal-edit'
     rootElement.innerHTML = `
@@ -17,13 +15,13 @@ export const EditPosts = () => {
           <textarea id="text-post" cols="70" rows="6" required></textarea> <br>
           <input type="submit" value="Enviar postagem" id="savemsg"/>
       </div>      
-`   
+      `
     const saveMsg = rootElement.querySelector('#savemsg')
     saveMsg.addEventListener('click', (event) => {
         event.preventDefault();
         const textPost = rootElement.querySelector('#text-post').value
         const id = rootElement.querySelector('#id-firebase').value
         firebaseActions.updatePost(textPost, id, returnMyPosts)
-      })
-return rootElement;
+    })
+    return rootElement
 }
