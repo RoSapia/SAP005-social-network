@@ -4,6 +4,7 @@ import { Home } from './pages/home/index.js';
 import { Login } from './pages/login/index.js';
 import { Register } from './pages/register/index.js';
 import { Posts } from './pages/posts/index.js';
+import { MyPosts } from './pages/myPosts/index.js';
 import { EditPosts } from './pages/editPosts/index.js';
 
 
@@ -13,14 +14,17 @@ const routeRender = () => {
         '/': Home,
         '/login': Login,
         '/register': Register,
+        '/cadastro': Register,
         '/posts': Posts,
+        '/myPosts': MyPosts,
         '/editPosts': EditPosts
-    
     };
 
     rootDiv.innerHTML = '';
-    rootDiv.appendChild(routes[window.location.pathname]());	
+    console.log(window.location.pathname)
+    rootDiv.appendChild(routes[window.location.pathname]());
 };
+
     window.addEventListener('popstate', routeRender);
     window.addEventListener('load', () => {
     document	 

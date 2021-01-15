@@ -1,28 +1,29 @@
 import { firebaseActions } from "../../services/index.js"
-import { returnCheckUser, returnUserPosts } from "./utils.js"
-//import { onNavigate } from '../../utils/history.js'
+import { returnMyPosts } from "./utils.js"
 
 export const EditPosts = () => {
-    firebaseActions.loginCheck(returnCheckUser)
+    //firebaseActions.loginCheck(returnCheckUser)
 
-    const rootElement = document.createElement('div');
-    rootElement.id = 'div-principal'
+    const rootElement = document.createElement('form');
+    rootElement.id = 'form-principal-edit'
     rootElement.innerHTML = `
-    <div class="user">
-          <h3>Suas publicações</h3>
+      <div class="user">
+          <span>Olá </span>
+          <span id="username"></span>
+          <span>Deseja editar essa postagem?</span>
       </div>
-      <div id="publish-post">
-          <p>Todas as publicações:</p>
-      </div>
-`;
-
-firebaseActions.readUserPosts(returnUserPosts)
-//Exclui postagem
-const editPostsButton = rootElement.querySelector('#edit-posts-button')
-if (editPostsButton) {
-  editPostsButton.addEventListener('click', (event) => {
-    onNavigate('/editPosts')
-  })
-}
+      <div class="text-post">
+        <span id="id-firebase" hidden></span>
+          <textarea id="text-post" cols="70" rows="6" required></textarea> <br>
+          <input type="submit" value="Enviar postagem" id="savemsg"/>
+      </div>      
+`   
+    const saveMsg = rootElement.querySelector('#savemsg')
+    saveMsg.addEventListener('click', (event) => {
+        event.preventDefault();
+        const textPost = rootElement.querySelector('#text-post').value
+        const id = rootElement.querySelector('#id-firebase').value
+        firebaseActions.updatePost(textPost, id, returnMyPosts)
+      })
 return rootElement;
-};
+}

@@ -33,13 +33,17 @@ Trabalhamos com um formulario de pesquisa , e apartir das infromações foram el
 
 •	1 - Criamos uma interface com a implementação de “Home” e “Login”  e  “Cadastro” utilizando a função “onNavigante” que ira registrar cada tela e histórico de navegação .
 
-•	2- Em Cadastro o usuário poderá efetuar o cadastro inserindo nome , email e senha . 
+•	2 - Em Cadastro o usuário poderá efetuar o cadastro inserindo nome , email e senha . 
 
-•	3- em Login implementamos Firebase Authentication e Cloud Firestore onde o usuário já cadastrado poderá acessar a pagina inserindo no campo email e senha ou utilizando sua conta do Google .
+• 3 - Somente usuários com contas válidas têm acesso permitido.
 
-•	4 -Após inserir sua email e senha a usuária terá acesso a  pagina Home , onde poderá postar mensagens, terá acesso aos botões de editar e excluir sua mensagem postada.
+• 4 - Quando o formulário de registro ou login é enviado, ele deve ser validado.(CADASTRO EFETUADO COM SUCESSO)
 
-•	5- Terá acesso também postagens publicadas por outras usuárias onde poderá curti-las utilizando o botão “Like”.
+•	5 - Em Login implementamos Firebase Authentication e Cloud Firestore onde o usuário já cadastrado poderá acessar a pagina inserindo no campo email e senha ou utilizando sua conta do Google .
+
+•	6 - A pós inserir sua email e senha a usuária terá acesso a pagina Home , onde poderá postar mensagens, terá acesso aos botões de editar e excluir sua mensagem postada.
+
+•	7 - Terá acesso também postagens publicadas por outras usuárias onde poderá curti-las utilizando o botão “Like”.
 
 - **Definição de pronto:**
   - Utilizamos uma SPA.
@@ -55,12 +59,15 @@ Os pricipais Usuários são Mulheres que trabalham na areá musical e admiradora
  Exemplo : 
  Estudande de Música
  Professoras
- Musiscistas proficionais
- Musicoterapeitas
- Protutoras 
+ Musiscistas profissionais
+ Musicoterapeutas
+ Produtoras 
  Hobistas
 
  - Qual problema o produto resolve/para que ele serve para esses usuários.
+
+* Essa Interface é uma Rede Social voltada somente para Mulheres da aréa Musical ou interessadas no assunto. 
+Em nossa plataforma as Usuárias porém ter acesso e entrar em contato com outras Mulheres da aréa musical, poderá publicar mensagens e curtir mensagens de outras usuárias que também utilizam a plataforma. 
 
 ## 5. Desenho da Interface
  ![Protótipo](imagem-Rede-Sociais.jpg)
@@ -78,36 +85,24 @@ uma de suas histórias de usuário deve possuir:
 ![Fluxograma](imagem-Fluxograma-Mulheres-Musicistas.jpg)
 
 ## 7. Interface 
+![Imagens Interface 1](imamgem-Rede-Sociais-Interface.jpg)
 
+![Imagens Interface 2](imagem-Rede-Sociais-Interface 2.jpg)
 
 ## 8. Funcinamento da Interface
 
 .Como a Interface Funciona
-A Usuária poderá acessar a rede social fazendo cadastro na menu Login ou através da sua conta Google, utilizando os demais menus com seguintes opções :
-•	Home 
-•	Perfil (Criar um Perfil com nome)
+A Usuária poderá acessar a rede social fazendo cadastro em menu Login ou através da sua conta Google, utilizando os demais menus com seguintes opções :
+
+•	Home Inicial (Mensagens de Boas Vindas)
+•	Login (Criar um Perfil com nome e inserir senha)
 •	Publicar (compartilhar texto e informações com as usuárias) 
+* Editar e Excluir suas Mensagens 
 •	Acessar mensagem e publicações de outras usuárias
-* Curtir mensagem do outras usuárias 
-•	Clicando em (Sair) o usuário retornar ao inicio do site
+* Likes (Curtir mensagem do outras usuárias) 
+* Likes (Remover Curtidas)
+•	Retornar para menu inicial 
 
-#### Timeline/linha do tempo
-
-- Validações:
-  - Ao publicar, deve ser validado se há conteúdo no _input_.
-- Comportamento:
-  - Ao recarregar o aplicativo, é necessário verificar se o usuário está
-    _logado_ antes de exibir o conteúdo,
-  - Conseguir publicar um _post_.
-  - Poder dar e remover _likes_ em uma publicação. Máximo de um por usuário.
-  - Visualizar contagem de _likes_.
-  - Poder excluir uma postagem específica.
-  - Solicitar confirmação antes de excluir um _post_.
-  - Ao clicar em editar um _post_, você deve alterar o texto para um _input_ que
-    permite editar o texto e salvar as alterações.
-  - Ao salvar as alterações, você deve voltar ao texto normal, mas com a
-    informação editada.
-  - Ao recarregar a página, poder ver os textos editados.
 
 ## 9. Autoras :
 Roberta Sapia / Sara Silva / Roberta Kelly 
