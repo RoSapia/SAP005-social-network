@@ -6,7 +6,7 @@ export const Home = () => {
 
   const rootElement = document.createElement('div');
   rootElement.innerHTML = `
-      <h1>Bem vindo ao MYDISK</h1>
+      <h1>Bem vinda a Rede Mulheres Musicistas</h1>
 
   `;
   return rootElement;
