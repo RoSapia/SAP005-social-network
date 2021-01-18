@@ -48,7 +48,7 @@ Trabalhamos com um formulário de pesquisa , e apartir das infromações foram e
 - **Definição de pronto:**
   - Utilizamos uma SPA.
   - Interface _responsivo_.
-  - Fazemos _code review_ .
+  - Fizemos _code review_ .
   - Foram efetuados _tests_ unitários.
   - Foram efetuados testes manuais buscando erros e imperfeições simples.
   - Foram efetuados testes de usabilidade e incorporar o _feedback_ dos usuários como
